@@ -41,3 +41,24 @@
                 </div>
                 {{ end }}
             </div>
+</div>
+        
+        <!-- Soft Skills -->
+        <div class="skill-category">
+            <h3 class="skill-category-title" data-en="Soft Skills" data-ar="المهارات الشخصية">
+                <i class="fas fa-users"></i>
+                Soft Skills
+            </h3>
+            <div class="skill-list">
+                {{ range $index, $skill := .Site.Data.en.skills.soft }}
+                <div class="skill-item">
+                    <span class="skill-number">{{ add $index 1 }}</span>
+                    <span class="skill-text" data-en="{{ $skill }}" data-ar="{{ index $.Site.Data.ar.skills.soft $index }}">
+                        {{ $skill }}
+                    </span>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
