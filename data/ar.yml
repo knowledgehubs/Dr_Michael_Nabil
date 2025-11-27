@@ -7,11 +7,11 @@
 # ════════════════════════════════════════════════════════════
 hero:
   name: "د. مايكل نبيل"
-  tagline: "جراح أسنان واختصاصي زراعة"
+  tagline: "جراح أسنان وأخصائي علاج جذور"
   graduation: "دفعة 2025"
   current_position:
-    role: "طبيب"  # أو "مساعد"، اتركه فارغاً إذا لم يكن يعمل
-    clinic: "عيادة النخبة لطب الأسنان"
+    role: "طبيب معالج"  # الترجمة لـ Operator
+    clinic: "MICKY clinic"  # MICKY clinic
   profile_image: "10-profile.jpg"
 
 # ════════════════════════════════════════════════════════════
@@ -19,20 +19,17 @@ hero:
 # ════════════════════════════════════════════════════════════
 skills:
   clinical:
-    - "زراعة الأسنان"
-    - "تقويم الأسنان"
-    - "علاج الجذور"
-    - "التركيبات الثابتة"
     - "جراحة الفم"
+    - "علاج الجذور"
+    - "التركيبات السنية"
     - "طب الأسنان التجميلي"
   
   digital:
-    - "فوتوشوب (تصوير الأسنان)"
+    - "إنشاء ملف أعمال طبي (برمجة كاملة)"
+    - "برمجة مواقع طب الأسنان بالكامل"
     - "التوثيق الرقمي"
-    - "مايكروسوفت باوربوينت"
+    - "مايكروسوفت باوربوينت (احترافي)"
     - "مايكروسوفت إكسل"
-    - "التخطيط ثلاثي الأبعاد"
-    - "تصميم CAD/CAM"
   
   soft:
     - "إدارة مرضى الأطفال"
@@ -46,12 +43,12 @@ skills:
 # القسم الثالث: التعليم والخط الزمني
 # ════════════════════════════════════════════════════════════
 education:
-  university: "كلية طب الأسنان - جامعة القاهرة"
+  university: "الجامعة المصرية الروسية - كلية طب الأسنان"
   graduation_year: "2025"
   
   master:
     obtained: true
-    title: "ماجستير في جراحة الفم والفكين"
+    title: "ماجستير في جراحة الفم والوجه والفكين (نسخة تجريبية)"
     year: "2027"
   
   phd:
@@ -65,14 +62,14 @@ education:
     - year: "2025"
       event: "التخرج بتقدير امتياز"
     - year: "2025-2026"
-      event: "سنة الامتياز بمستشفى الجامعة"
+      event: "سنة الامتياز بالمستشفى الجامعي"
     - year: "2027"
-      event: "بداية العمل في عيادة النخبة"
+      event: "بداية العمل في عيادة - MICKY CLINIC"
     - year: "2028"
-      event: "افتتاح عيادة خاصة"
+      event: "افتتاح العيادة الخاصة"
   
   certificates:
-    - title: "دبلوم زراعة الأسنان - 30 ساعة معتمدة"
+    - title: "زراعة الأسنان - 30 ساعة معتمدة"
       image: "30-cert-01.jpg"
     - title: "علاج الجذور المتقدم - 40 ساعة"
       image: "30-cert-02.jpg"
@@ -89,16 +86,16 @@ clinical_cases:
     cases:
       - before: "40-endo-before-01.jpg"
         after: "40-endo-after-01.jpg"
-        description: "علاج جذور مع تاج تجميلي"
+        description: "علاج جذور مع ترميم بالتاج"
       - before: "40-endo-before-02.jpg"
         after: "40-endo-after-02.jpg"
         description: "حالة علاج جذور معقدة"
   
-  - category: "القشور الخزفية"
+  - category: "القشور الخزفية (الفينير)"
     cases:
       - before: "40-veneer-before-01.jpg"
         after: "40-veneer-after-01.jpg"
-        description: "تجميل ابتسامة كامل بالقشور الخزفية"
+        description: "تجميل ابتسامة كامل بقشور البورسلين"
       - before: "40-veneer-before-02.jpg"
         after: "40-veneer-after-02.jpg"
         description: "ترميم تجميلي أمامي"
@@ -107,31 +104,31 @@ clinical_cases:
     cases:
       - before: "40-ortho-before-01.jpg"
         after: "40-ortho-after-01.jpg"
-        description: "علاج بالمقوم الشفاف"
+        description: "علاج بالتقويم الشفاف"
   
   - category: "التيجان والجسور"
     cases:
       - before: "40-crown-before-01.jpg"
         after: "40-crown-after-01.jpg"
-        description: "تاج خزفي كامل"
+        description: "ترميم كامل بـ 4 تيجان E-MAX"
 
 # ════════════════════════════════════════════════════════════
 # القسم السادس: التواصل
 # ════════════════════════════════════════════════════════════
 contact:
-  phone: "+20 100 123 4567"
-  whatsapp: "+20 100 123 4567"
-  email: "dr.michael@example.com"
+  phone: "+201271476215"
+  whatsapp: "+201271476215"
+  email: "michaelnabilofficial1@gmail.com"
   
-  instagram: "https://instagram.com/dr.michael"
-  facebook: "https://facebook.com/dr.michael"
-  linkedin: "https://linkedin.com/in/dr-michael"
+  instagram: "https://www.instagram.com/michaelnabilofficial/"
+  facebook: "https://facebook.com/Micky2452"
+  linkedin: "https://linkedin.com"
   
   location:
     enabled: true
-    address: "123 شارع الطبي، القاهرة، مصر"
-    latitude: "30.0444"
-    longitude: "31.2357"
+    address: "مستشفيات جامعة الزقازيق"
+    latitude: "30.585070727964393"
+    longitude: "31.487296675825437"
 
 theme:
   primary_color: "#2563eb"
