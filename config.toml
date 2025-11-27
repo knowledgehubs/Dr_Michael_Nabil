@@ -1,1 +1,26 @@
+baseURL = "https://supernotesplus.github.io/Dr_Michael_Nabil/"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Dr. Portfolio"
 
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+  [languages.ar]
+    languageName = "العربية"
+    weight = 2
+
+[params]
+  description = "Professional Dental Portfolio"
+  author = "Dr. Name"
+
+[build]
+  writeStats = true
+
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
