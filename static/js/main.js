@@ -49,6 +49,7 @@
 
     function applyLanguage(lang) {
       body.setAttribute("data-lang", lang);
+      body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
       document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
 
       document.querySelectorAll("[data-en][data-ar]").forEach((el) => {
@@ -73,27 +74,24 @@
     }
 
     // ================================
-    // 3) MOBILE MENU (المهم جداً)
+    // 3) MOBILE MENU
     // ================================
     const menuBtn = document.getElementById("menuBtn");
     const closeBtn = document.getElementById("closeBtn");
     const mobileNav = document.getElementById("mobileNav");
 
-    // افتح القائمة
     if (menuBtn && mobileNav) {
       menuBtn.addEventListener("click", () => {
         mobileNav.classList.add("active");
       });
     }
 
-    // اغلق القائمة
     if (closeBtn && mobileNav) {
       closeBtn.addEventListener("click", () => {
         mobileNav.classList.remove("active");
       });
     }
 
-    // اغلاق عند الضغط على رابط
     document.querySelectorAll(".mobile-nav a").forEach((link) => {
       link.addEventListener("click", () => {
         mobileNav.classList.remove("active");
@@ -101,7 +99,10 @@
     });
   });
 })();
-// === DOWNLOAD PORTFOLIO AS PDF ===
+
+// =====================================================
+// PDF DOWNLOAD — Working Perfectly
+// =====================================================
 (function () {
     const downloadBtn = document.getElementById("downloadCV");
 
@@ -109,15 +110,14 @@
 
     downloadBtn.addEventListener("click", function () {
 
-        // العنصر المراد تحويله PDF
         const element = document.querySelector(".portfolio-container") || document.body;
 
         const opt = {
-            margin:       0,
-            filename:     'Dr_Micky_Portfolio.pdf',
-            image:        { type: 'jpeg', quality: 1 },
-            html2canvas:  { scale: 2, useCORS: true },
-            jsPDF:        { unit: 'pt', format: 'a4', orientation: 'portrait' }
+            margin: 0,
+            filename: 'Dr_Micky_Portfolio.pdf',
+            image: { type: 'jpeg', quality: 1 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
         };
 
         html2pdf().from(element).set(opt).save();
