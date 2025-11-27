@@ -1,30 +1,30 @@
 {{ define "main" }}
-<article class="blog-single-container">
-    <header class="blog-single-header">
+<div class="blog-single-container">
+
+    <div class="blog-single-header">
         <h1 class="blog-single-title">{{ .Title }}</h1>
-        <div class="blog-single-meta">
-            <span class="blog-single-date">
-                <i class="far fa-calendar"></i>
-                {{ .Date.Format "January 2, 2006" }}
-            </span>
-        </div>
-    </header>
-    
-    {{ if .Params.thumbnail }}
+
+        <p class="blog-single-meta">
+            <i class="fas fa-calendar"></i>
+            {{ .Date.Format "January 2, 2006" }}
+        </p>
+    </div>
+
+    {{ if .Params.image }}
     <div class="blog-single-image">
-        <img src="{{ print "images/" .Params.thumbnail | relURL }}" alt="{{ .Title }}">
+        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
     </div>
     {{ end }}
-    
+
     <div class="blog-single-content">
         {{ .Content }}
     </div>
-    
-    <footer class="blog-single-footer">
-        <a href="/blog/" class="btn btn-secondary">
-            <i class="fas fa-arrow-left"></i>
-            Back to Blog
+
+    <div class="blog-single-footer">
+        <a href="{{ "/" | relURL }}#blog" class="blog-back">
+            ⬅ Back to Blog
         </a>
-    </footer>
-</article>
+    </div>
+
+</div>
 {{ end }}
