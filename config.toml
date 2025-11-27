@@ -20,6 +20,7 @@ title = "Dr. Portfolio"
 
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
 
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
