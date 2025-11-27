@@ -10,7 +10,9 @@
     <div class="cases-container">
         {{ range $catIndex, $category := .Site.Data.en.clinical_cases }}
         <div class="case-category">
-            <h3 class="case-category-title" data-en="{{ $category.category }}" data-ar="{{ (index $.Site.Data.ar.clinical_cases $catIndex).category }}">
+            <h3 class="case-category-title" 
+                data-en="{{ $category.category }}" 
+                data-ar="{{ (index $.Site.Data.ar.clinical_cases $catIndex).category }}">
                 {{ $category.category }}
             </h3>
             
@@ -18,6 +20,7 @@
                 {{ range $caseIndex, $case := $category.cases }}
                 <div class="case-card">
                     <div class="case-images">
+                        
                         <!-- Before Image -->
                         <div class="case-image-wrapper before">
                             <img 
@@ -42,7 +45,10 @@
                     </div>
                     
                     <div class="case-description">
-                        <p data-en="{{ $case.description }}" data-ar="{{ ((index $.Site.Data.ar.clinical_cases $catIndex).cases | index $caseIndex).description }}">
+                        <p 
+                            data-en="{{ $case.description }}" 
+                            data-ar="{{ (index (index $.Site.Data.ar.clinical_cases $catIndex).cases $caseIndex).description }}"
+                        >
                             {{ $case.description }}
                         </p>
                     </div>
